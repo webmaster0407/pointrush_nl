@@ -1,0 +1,147 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+@import "~leaflet/dist/leaflet.css";
+@import "~lightbox2/dist/css/lightbox.min.css";
+@import "~@fortawesome/fontawesome-free/css/solid.min.css";
+@import "~@fortawesome/fontawesome-free/css/fontawesome.min.css";
+html,
+body,
+#map,
+#disclamer {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+div#map-claim {
+    margin: auto;
+    width: 95%;
+    height: 30vh;
+    font-family: Verdana, Geneva, sans-serif;
+    box-shadow: 1px 1px 14px 3px #dbd2db;
+    border-radius: 10px;
+}
+
+#countdown {
+    position: absolute;
+    top: 0;
+    /* right:0; */
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    font-size: 20px;
+    z-index: 99999;
+    color: #fff;
+    width: 100%;
+    text-align: right;
+    box-sizing: border-box;
+}
+#countdown .left {
+    display: block;
+    float: left;
+}
+
+#countdown .left,
+.header .left {
+    display: inline-block;
+    float: left;
+}
+#countdown i {
+    cursor: pointer;
+}
+#countdown .right,
+.header .right {
+    display: inline-block;
+    float: right;
+}
+#disclaimer {
+    background-color: #fff;
+    z-index: 99999;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: none;
+}
+.header {
+    overflow: auto;
+}
+.header h3 {
+    display: inline-block;
+}
+.leaflet-shadow-pane {
+    display: none;
+}
+.my-div-icon {
+    color: #3388ff;
+    width: unset !important;
+    font-weight: bold;
+}
+.my-div-icon-title {
+    min-width: 100px;
+    text-align: center;
+}
+
+.claim-title {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    h2 {
+        text-align: center;
+        text-transform: capitalize;
+        font-weight: bold;
+        padding: 12px 0;
+            font-size: 18px;
+    }
+    .fas.fa-times {
+        font-size: 20px;
+        color: #3490dc;
+        position: relative;
+        top: -37px;
+    }
+}
+.claim-expire-msg {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.claim-form {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    .claim-save {
+        max-width: 150px;
+        width: 100%;
+    }
+}
+.toast-container {
+    position: absolute;
+    top: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* bottom: 12%; */
+    top: -37%;
+    .toast.success {
+        background: #8df78f;
+    }
+    .toast.error {
+        background: #ea5050;
+    }
+}
